@@ -4,6 +4,7 @@ import Framework.Brownser.Waits;
 import PagesObjects.HomePage;
 import PagesObjects.LoginPage;
 import PagesObjects.ValidacaoSaldoPage;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.WebDriver;
 
 public class HomeTasks {
@@ -23,7 +24,6 @@ public class HomeTasks {
     }
 
     public void efetuarCadastro1() throws InterruptedException {
-
         homePage.getClickRegister().click();
         homePage.getCriaEmail().sendKeys(email1);
         homePage.getCriaNome().sendKeys("teste1");
