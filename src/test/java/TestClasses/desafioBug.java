@@ -20,21 +20,18 @@ public class desafioBug extends TestBase {
     private WebDriver driver = getDriver();
     private ExtentReports extent;
     private ExtentTest test;
-
     HomeTasks homeTasks = new HomeTasks(driver);
     LoginTasks loginTasks = new LoginTasks(driver);
     ValidacaoSaldoTasks validacaoSaldoTasks = new ValidacaoSaldoTasks(driver);
 
     @BeforeEach
     public void setUp() {
-        // Inicializa o ExtentReports e ExtentHtmlReporter
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("extent-report.html");
         extent = new ExtentReports();
         extent.attachReporter(htmlReporter);
 
         test = extent.createTest("Teste de Transferência", "Realiza transferência entre contas e valida saldo");
     }
-
     @Test
     public void Transferencia() throws InterruptedException {
         test.log(Status.INFO, "Iniciando o teste...");

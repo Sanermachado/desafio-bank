@@ -6,7 +6,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import static Framework.Brownser.DriverManager.driver;
-
 public class ValidacaoSaldoPage {
     public ValidacaoSaldoPage(WebDriver driver) {
     }

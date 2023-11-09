@@ -109,37 +109,6 @@ private Waits waits;
         WebElement fechaModal2 = driver.findElement(By.cssSelector(".cCGrzy"));
         return fechaModal2;
     }
-//    public void getValidaSaldo() {
-//        {
-//            WebElement elemento1 = driver.findElement(By.id("textBalance"));
-//            String resultadoEsperado = "Saldo em conta R$ 900,00";
-//            String resultadoObtido = elemento1.getText();
-//            // Verifica se o resultado obtido é igual ao resultado esperado
-//            Assert.assertEquals(resultadoEsperado, resultadoObtido);
-//        }
-//    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public String getDigito1() {
         return digito1;}
     public String getConta1() {

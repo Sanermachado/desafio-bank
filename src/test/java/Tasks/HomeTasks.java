@@ -20,9 +20,7 @@ public class HomeTasks {
         this.driver = driver;
         homePage = new HomePage(this.driver);
         LoginPage loginPage = new LoginPage(this.driver);
-
     }
-
     public void efetuarCadastro1() throws InterruptedException {
         homePage.getClickRegister().click();
         homePage.getCriaEmail().sendKeys(email1);
@@ -37,7 +35,6 @@ public class HomeTasks {
         homePage.getFechaModal().click();
         driver.navigate().refresh();
     }
-
     public void efetuarCadastro2() throws InterruptedException {
 
         homePage.getClickRegister().click();
@@ -53,10 +50,6 @@ public class HomeTasks {
         homePage.getFechaModal().click();
         driver.navigate().refresh();
     }
-
-
-
-
     public void transfereSaldo() throws InterruptedException {
         Thread.sleep(500);
         homePage.getTransferencia().click();
@@ -67,7 +60,6 @@ public class HomeTasks {
         homePage.getValorTransferido().sendKeys("100");
         homePage.getTransferirAgora().click();
     }
-
     public void validaTransferencia() throws InterruptedException {
         Thread.sleep(500);
         homePage.getFechaModal2().click();
@@ -75,6 +67,5 @@ public class HomeTasks {
         validacaoSaldoPage.getValidaSaldo();
         homePage.getSairConta().click();
     }
-
 }
 
